@@ -17,16 +17,16 @@
 	function determineTriangle(a, b, c){
     	   if (isNaN(a) || isNaN(b) || isNaN(c)){
       	   	triangle = "incalculable:\nThe values entered are not valid numbers. Please refresh the website, and try again.";
-    	}
+    	   }
     	   else if ((a === b) && (a === c)){
       	   	triangle = "EQUILATERAL";
-    	}
+    	   }
     	   else if (a == b || b == c || a == c)  {
       	   	triangle = "ISOSCELES";
-   	}
+   	   }
     	   else {
       	  	 triangle = "SCALENE";
-   	}
+   	   }
    	window.alert("The triangle is " + triangle);
  	}
 
