@@ -10,30 +10,28 @@
 
 <body>
 	<script>
-	
 	let a = parseFloat(prompt("Input length of triangle (Side A):", 0));
 	let b = parseFloat(prompt("Input length of triangle (Side B):", 0));
 	let c = parseFloat(prompt("Input length of triangle (Side C):", 0));
 
 	function determineTriangle(a, b, c){
-    if (isNaN(a) || isNaN(b) || isNaN(c)){
-      triangle = "incalculable:\nThe values entered are not valid numbers. Please refresh the website, and try again.";
-    }
-    else if ((a === b) && (a === c)){
-      triangle = "EQUILATERAL";
-    }
-    else if (a == b || b == c || a == c)  {
-      triangle = "ISOSCELES";
-    }
-    else {
-      triangle = "SCALENE";
-    }
-    window.alert("The triangle is " + triangle);
-  }
+    	   if (isNaN(a) || isNaN(b) || isNaN(c)){
+      	   	triangle = "incalculable:\nThe values entered are not valid numbers. Please refresh the website, and try again.";
+    	}
+    	   else if ((a === b) && (a === c)){
+      	   	triangle = "EQUILATERAL";
+    	}
+    	   else if (a == b || b == c || a == c)  {
+      	   	triangle = "ISOSCELES";
+   	}
+    	   else {
+      	  	 triangle = "SCALENE";
+   	}
+   	window.alert("The triangle is " + triangle);
+ 	}
 
-  triangle = determineTriangle(a, b, c);
+  	triangle = determineTriangle(a, b, c);
     
 	</script>
 </body>
-
 </html>
